@@ -12,6 +12,7 @@ import React from "react";
 import classes from "./confirmSubmit.module.css";
 
 const ConfirmSubmit = ({ submitResponse, onClose }) => {
+  console.log(submitResponse);
   return (
     <div className={classes["confirm-submit"]}>
       <h1 className={classes["confirm-message"]}>{submitResponse.message}</h1>

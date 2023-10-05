@@ -5,9 +5,8 @@ import classes from "./ReviewForm.module.css";
 
 const ReviewForm = ({ formData, setFormData, isFilled }) => {
   const [isEditOpen, setIsEditOpen] = useState(false);
-  useEffect(() => {
-    isFilled(true);
-  }, []);
+  // const [counter, setcounter] = useState(1)
+
 
   const handleEditClick = (props) => {
     // console.log(props);
@@ -16,7 +15,14 @@ const ReviewForm = ({ formData, setFormData, isFilled }) => {
 
   const handleEditClose = () => {
     setIsEditOpen(false);
+    // setcounter(counter + 1);
   };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    isFilled(true);
+
+  };
+  // console.log(isFilled);
 
   return (
     <div>
@@ -85,6 +91,9 @@ const ReviewForm = ({ formData, setFormData, isFilled }) => {
             >
               <b>Current_Location:</b> {formData.currentLocation}
             </p>
+          </div>
+          <div className={classes.submit}>
+          <button onClick={handleSubmit}>Submit</button>
           </div>
         </div>
       )}

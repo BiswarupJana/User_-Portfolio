@@ -56,3 +56,26 @@
     background-color: rgb(90, 75, 52);
     color: white;
   }
+
+
+
+  .submit {
+    /* background-color: rgb(124, 122, 118); */
+    border-radius: 10px;
+    height: 50px;
+  }
+  .submit button {
+    /* height: 90%;
+    width: 100%; */
+    padding: 10%;
+    margin: 1%;
+    border-radius: 10px;
+    background-color: rgb(149, 188, 241);
+    color: black;
+    font-size: medium;
+  }
+  .submit button:hover {
+    background-color: rgb(39, 18, 228);
+    color: white;
+  }
+  
