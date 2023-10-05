@@ -8,7 +8,7 @@ const userRouter = require("./routes/userRouter")
 const app = express();
 // 1) Middleware
 app.use(cors({
-  origin: 'http://localhost:3000', // Set the origin to allow requests from
+  origin: 'https://portfolio-kxz5.onrender.com', // Set the origin to allow requests from
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Specify the allowed HTTP methods
   credentials: true, // Allow cookies and HTTP authentication to be included
 }));
@@ -24,11 +24,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.UseCors(x => x
-  .AllowAnyMethod()
-  .AllowAnyHeader()
-  .SetIsOriginAllowed(origin => true) // allow any origin
-  .AllowCredentials()); // allow credentials
 
 
 
