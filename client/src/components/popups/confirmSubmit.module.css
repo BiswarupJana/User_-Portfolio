@@ -1,0 +1,28 @@
+/* Style the ConfirmSubmit component */
+.confirm-submit {
+    background: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    text-align: center;
+  }
+  
+  /* Style the message text */
+  .confirm-message {
+    font-size: 18px;
+  }
+  
+  /* Style the OK button */
+  .confirm-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .confirm-button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+  }

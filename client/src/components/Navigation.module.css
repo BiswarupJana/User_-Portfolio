@@ -1,0 +1,28 @@
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.nav_btn{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    width: 100%;
+}
+.nav_btn button{
+    height: 30%;
+    width: 50%;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 10px;
+    background-color: rgb(149, 188, 241);
+    color: black;
+    font-size: medium; 
+}
+
+.nav_btn button:hover {
+    background-color: rgb(39, 18, 228);
+    color: white;
+  }

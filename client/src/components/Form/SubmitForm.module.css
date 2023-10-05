@@ -1,0 +1,32 @@
+.total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    /* background-color: rgb(223, 223, 223); */
+    padding: 5%;
+    margin: 5%;
+    height: 900px;
+    width: 900px;
+    border-radius: 10px;
+    font-size: larger;
+  }
+
+
+  .total button {
+    height: 30%;
+    width: 30%;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 10px;
+    background-color: rgb(149, 188, 241);
+    color: black;
+    font-size: medium;
+  }
+
+  .total button:hover {
+    background-color: rgb(39, 18, 228);
+    color: white;
+  }
+  
