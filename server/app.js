@@ -8,9 +8,12 @@ const userRouter = require("./routes/userRouter")
 const app = express();
 // 1) Middleware
 app.use(cors({
-  origin: '*', // Set the origin to allow requests from
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Specify the allowed HTTP methods
-  credentials: true, // Allow cookies and HTTP authentication to be included
+  origin: [
+    'https://651e982c69744f0e750867a8--fabulous-sable-6e5530.netlify.app',
+    'https://portfolio-00012345.netlify.app',
+  ],
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
 }));
 console.log(process.env.NODE_ENV);
 if (process.env.NODE_ENV === 'development') {
