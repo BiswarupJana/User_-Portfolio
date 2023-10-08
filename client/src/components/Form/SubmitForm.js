@@ -1,15 +1,18 @@
 import React, { useState } from "react";
+import { TailSpin } from "react-loader-spinner";
 import { Popup } from "reactjs-popup";
 import { UserDataState } from "../../context/manage_userContext";
 import ConfirmSubmit from './../popups/confirmSubmit';
 import classes from "./SubmitForm.module.css";
 
 export const SubmitForm = ({ formData }) => {
-  const { submitResponse, postUserData } = UserDataState() || {};
+  const { submitResponse, postUserData, loading } = UserDataState() || {};
   const [isConfirmed, setisConfirmed] = useState(false);
 
+
+
   const handleSubmit = async () => {
-    await postUserData(formData);
+    await postUserData(formData)
     setisConfirmed(true)
     // console.log(submitResponse.message)
   };
@@ -19,15 +22,21 @@ export const SubmitForm = ({ formData }) => {
     
     // window.location.reload();
   };
-  return (
+  return(
     <div className={classes.total}>
-      <Popup open={isConfirmed} onClose={handleClose}>
-        <ConfirmSubmit onClose={handleClose} submitResponse={submitResponse}/>
-      </Popup>
-      {!isConfirmed && (
+      {loading ? (
+        <TailSpin color="red" radius={"8px"} />
+      ) : (
         <div>
-        <h1>Do you want to submit?</h1>
-        <button onClick={handleSubmit}>Confirm</button>
+          <Popup open={isConfirmed} onClose={handleClose}>
+            <ConfirmSubmit onClose={handleClose} submitResponse={submitResponse} />
+          </Popup>
+          {!isConfirmed && (
+            <div>
+              <h1 className={classes.body}>Do you want to submit?</h1>
+              <button onClick={handleSubmit}>Confirm</button>
+            </div>
+          )}
         </div>
       )}
     </div>

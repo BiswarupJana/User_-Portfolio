@@ -7,15 +7,18 @@
     /* background-color: rgb(223, 223, 223); */
     padding: 5%;
     margin: 5%;
-    height: 900px;
-    width: 900px;
     border-radius: 10px;
     font-size: larger;
+    height: 100%;
+    width: 90vh;
+    padding: 5px;
   }
 
-
+.body{
+  height: 50vh;
+}
   .total button {
-    height: 30%;
+    /* height: 30%; */
     width: 30%;
     padding: 2%;
     margin: 1%;

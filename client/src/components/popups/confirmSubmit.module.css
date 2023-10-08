@@ -5,11 +5,17 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
     text-align: center;
+    height: 96vh;
+    width: 90vh;
+    padding: 5px;
   }
   
   /* Style the message text */
   .confirm-message {
-    font-size: 18px;
+    font-size: medium ;
+    margin-top: 5px;
+  max-height: 70vh;
+ 
   }
   
   /* Style the OK button */

@@ -3,11 +3,13 @@ import React, { createContext, useContext, useState } from "react";
 const UserData = createContext();
 const UserContext = ({ children }) => {
   const [submitResponse, setsubmitResponse] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const postUserData = async (props) => {
 
     console.log(props);
     try {
+      setLoading(true);
       const response = await fetch("https://portfolio-kxz5.onrender.com/api/v1/user", {
         method: "POST",
         headers:{
@@ -25,6 +27,8 @@ const UserContext = ({ children }) => {
       }
     } catch (error) {
       console.log(error.message);
+    }finally{
+      setLoading(false);
     }
   };
 
@@ -34,6 +38,7 @@ const UserContext = ({ children }) => {
         submitResponse,
         
         postUserData,
+        loading,
       }}
     >
       {children}

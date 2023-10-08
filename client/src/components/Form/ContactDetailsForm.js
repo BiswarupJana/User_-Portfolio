@@ -18,10 +18,11 @@ const ContactDetailsForm = ({ formData, isFilled, handleChange }) => {
   };
   return (
     <div className={classes.total}>
-      <form action="" onSubmit={handleSubmit} style={{ height: "90%",width:'95%' }}>
-        <div>
+      <div className={classes.head}>
           <h2>Contact Details</h2>
         </div>
+      <form action="" onSubmit={handleSubmit} style={{ height: "90%",width:'95%' }}>
+        
         <div className={classes.body}>
           <div className={classes.inputBody}>
             <label htmlFor="">Email</label>

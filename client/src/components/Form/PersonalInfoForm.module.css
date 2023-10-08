@@ -1,54 +1,61 @@
+
 .total {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(223, 223, 223);
-  padding: 5%;
-  margin: 5px;
   height: 100%;
-  width: 100%;
-  border-radius: 10px;
-  font-size: larger;
+  width: 90vh;
+  padding: 5px;
+  
+}
+
+.head{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(206, 207, 209);
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgb(21, 17, 17);
 }
 
 .body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: aliceblue;
-  padding: 5%;
-  margin: 2%;
-  border-radius: 10px;
-  overflow-y: auto; /* Enable vertical scrolling when content exceeds max height */
-  max-height: 90%;
+  margin-top: 5px;
+  max-height: 70vh;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: rgb(178, 181, 184);
+  box-shadow: 5px 5px 5px rgb(21, 17, 17);
 }
+
+
 
 .inputBody {
   display: flex;
   flex-direction: column;
-  align-items: self-start;
+  align-items: flex-start; /* Changed from self-start */
   padding: 2%;
 }
 
 .inputBody input {
   width: 100%;
-  height: 30px;
+  height: auto; /* Increased input height for better touch interaction */
+  padding: 5px; /* Added padding for better spacing */
+  border: 1px solid #ccc; /* Added border for better input visibility */
+  border-radius: 5px; /* Added border radius for styling */
 }
 
 .submit {
-  border-radius: 10px;
-  height: 50px;
+  display: flex;
+  justify-content: center; /* Center button horizontally */
+  align-items: center; /* Center button vertically */
+  margin-top: 20px; /* Add margin to separate from other elements */
 }
 
 .submit button {
-  height: 90%;
+  height: 5vh;
   width: 40%;
-  padding: 2%;
-  margin: 1%;
+  border: none; /* Removed border for a cleaner look */
   border-radius: 10px;
   background-color: rgb(149, 188, 241);
   color: black;
   font-size: medium;
+  cursor: pointer; /* Add pointer cursor to indicate interactivity */
 }
 
 .submit button:hover {

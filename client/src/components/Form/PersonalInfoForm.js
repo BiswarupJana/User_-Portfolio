@@ -26,10 +26,11 @@ const PersonalInfoForm = ({ formData, isFilled, handleChange }) => {
   };
   return (
     <div className={classes.total}>
-      <form action="" onSubmit={handleSubmit}>
-        <div>
+      <div className={classes.head}>
           <h1>Personal Information</h1>
         </div>
+      <form action="" onSubmit={handleSubmit}>
+        
         <div className={classes.body}>
           <div className={classes.inputBody}>
             <label>Name* </label>

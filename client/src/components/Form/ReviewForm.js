@@ -38,7 +38,7 @@ const ReviewForm = ({ formData, setFormData, isFilled }) => {
       </div>
       {!isEditOpen && (
         <div className={classes.total}>
-          <h1>Review Your Information</h1>
+          <h1 className={classes.head}>Review Your Information</h1>
           <div className={classes.edit_btn}>
             <button onClick={handleEditClick}>Edit</button>
           </div>

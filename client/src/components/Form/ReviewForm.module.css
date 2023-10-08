@@ -1,81 +1,78 @@
-
 .total {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(223, 223, 223);
-    padding: 5%;
-    margin: 5%;
-    height: 1000px;
-    width: 100%;
-    border-radius: 10px;
-    font-size: larger;
-    /* overflow-y: auto;
-    overflow-x: auto;
-    scroll-behavior: smooth; */
-  }
 
-  .body {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
-    background-color: aliceblue;
-    padding: 5%;
-    margin: 2%;
-    margin-top: 5px;
-    border-radius: 10px;
-    max-width: 90%;
-    overflow-y: auto; /* Use "auto" for automatic scrolling when content exceeds the container height */
-    max-height: 95%; /* Set a maximum height to enable scrolling when the content exceeds this height */
-  }
+  height: 100%;
+  width: 90vh;
+  padding: 5px;
+}
 
-  .edit_btn{
-    /* background-color: rgb(239, 239, 241); */
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    margin-right: 5%;
-    
-  }
+.head{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(206, 207, 209);
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgb(21, 17, 17);
+}
 
-  .edit_btn button {
-    width: 15%;
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  background-color: aliceblue;
+  padding: 5%;
+  margin: 2%;
+  margin-top: 5px;
+  border-radius: 10px;
+  max-width: 90%;
+  overflow-y: auto;
+  max-height: 50vh;
+  overflow: hidden;
+  overflow-y: auto;
+  /* background-color: rgb(178, 181, 184); */
+  box-shadow: 5px 5px 5px rgb(21, 17, 17);
+}
+
+.edit_btn {
+  /* background-color: rgb(239, 239, 241); */
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 5%;
+}
+
+.edit_btn button {
+  width: 15%;
   padding: 2%;
   margin: 1%;
   border-radius: 10px;
   background-color: rgb(149, 188, 241);
   color: black;
   font-size: medium;
-  }
+}
 
-  .edit_btn button:hover {
-    background-color: rgb(90, 75, 52);
-    color: white;
-  }
+.edit_btn button:hover {
+  background-color: rgb(90, 75, 52);
+  color: white;
+}
 
-
-
-  .submit {
-    /* background-color: rgb(124, 122, 118); */
-    border-radius: 10px;
-    height: 50px;
-  }
-  .submit button {
-    /* height: 90%;
-    width: 100%; */
-    padding: 10%;
-    margin: 1%;
-    border-radius: 10px;
-    background-color: rgb(149, 188, 241);
-    color: black;
-    font-size: medium;
-  }
-  .submit button:hover {
-    background-color: rgb(39, 18, 228);
-    color: white;
-  }
-  
+.submit {
+  display: flex;
+  justify-content: center; /* Center button horizontally */
+  margin-top: 20px;
+}
+.submit button {
+  height: 5vh;
+  width: 40%;
+  border: none; /* Removed border for a cleaner look */
+  border-radius: 10px;
+  background-color: rgb(149, 188, 241);
+  color: black;
+  font-size: medium;
+  cursor: pointer; 
+}
+.submit button:hover {
+  background-color: rgb(39, 18, 228);
+  color: white;
+}
